@@ -9,7 +9,7 @@ module.exports = {
     'storybook-addon-next',
   ],
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  staticDirs: ['../public'],
+  staticDirs: ['.next'],
   core: {
     builder: 'webpack5',
   },
