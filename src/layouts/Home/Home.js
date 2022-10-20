@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Frontend', 'Backend', 'Blockchain','DevOps'];
+const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -68,8 +68,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Full Stack Developer"
-        description="Design portfolio of Denis Varhan — a product designer working on web & mobile
+        title="Designer + Developer"
+        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
       <Intro
@@ -83,8 +83,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Developing the future of education"
-        description="Building a platform to help educators build better online courseware"
+        title="Designing the future of education"
+        description="Designing a platform to help educators build better online courseware"
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{

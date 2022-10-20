@@ -23,9 +23,11 @@ async function addPost(post) {
   const { frontmatter } = await bundleMDX({ source });
 
   if (process.env.NODE_ENV === 'production' && frontmatter.draft) return;
- 
 
-  return `  <url> 
+  const path = post.replace('src/posts', '/articles').replace('.mdx', '');
+
+  return `  <url>
+    <loc>${`${process.env.NEXT_PUBLIC_WEBSITE_URL}${path}`}</loc>
     <changefreq>monthly</changefreq>
   </url>`;
 }

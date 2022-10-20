@@ -14,11 +14,11 @@ const ses = new aws.SES({
   region: 'us-east-1',
 });
 
-const ORIGINS = ['https://devarhanov.com', 'https://www.devarhanov.com'];
+const ORIGINS = ['https://hamishw.com', 'https://www.hamishw.com'];
 const MAX_EMAIL_LENGTH = 512;
 const MAX_MESSAGE_LENGTH = 4096;
-const EMAIL = 'devarhanov@gmail.com';
-const FROM_EMAIL = 'devarhanov@gmail.com';
+const EMAIL = 'hello@hamishw.com';
+const FROM_EMAIL = 'mailbot@hamishw.com';
 const EMAIL_PATTERN = /(.+)@(.+){2,}\.(.+){2,}/;
 
 app.use(helmet());
