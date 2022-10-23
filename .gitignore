@@ -58,9 +58,6 @@ typings/
 .env.local
 
 build/
-build-storybook/
-public/sitemap.xml
-public/draco/
-public/og
+build-storybook/ 
 .serverless
 .next

@@ -1,13 +1,13 @@
 module.exports = {
   reactStrictMode: true,
   trailingSlash: true,
-  // pageExtensions: ['page.js', 'api.js'],
+  pageExtensions: ['page.js', 'api.js'],
   distDir: 'build',
   webpack(config, { isServer }) {
     // Run custom scripts
     if (isServer) {
-      // require('./scripts/generate-sitemap');
-      // require('./scripts/draco');
+      require('./scripts/generate-sitemap');
+      require('./scripts/draco');
     }
 
     // Import `svg` files as React components
