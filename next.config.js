@@ -7,7 +7,7 @@ module.exports = {
     // Run custom scripts
     if (isServer) {
       // require('./scripts/generate-sitemap');
-      require('./scripts/draco');
+      // require('./scripts/draco');
     }
 
     // Import `svg` files as React components
